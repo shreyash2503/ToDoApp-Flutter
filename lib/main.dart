@@ -1,10 +1,12 @@
 import 'package:firstproject/constants/routes.dart';
 import 'package:firstproject/services/auth/auth_service.dart';
 import 'package:firstproject/views/login_view.dart';
-import 'package:firstproject/views/notes_view.dart';
+import 'package:firstproject/views/notes/new_note_view.dart';
+import 'package:firstproject/views/notes/notes_view.dart';
 import 'package:firstproject/views/register_view.dart';
 import 'package:firstproject/views/verify_email_view.dart';
 import 'package:flutter/material.dart';
+import 'package:path/path.dart';
 // import 'dart:developer' as devtools show log;
 
 void main() {
@@ -21,6 +23,7 @@ void main() {
       registerRoute: (context) => const RegisterView(),
       notesRoute: (context) => const NotesView(),
       verifyEmailRoute: (context) => const VerifyEmailView(),
+      newNoteRoute: (context) => const NewNoteView(),
     },
   ));
 }
